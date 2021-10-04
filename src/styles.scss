@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+$primary-blue: #43afff;
+
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #edf6ff;
+}
+
+.text-primary-blue {
+  color: $primary-blue;
+}
+
+.btn-transparent {
+  background-color: #43afff33;
+  border: 1px solid #43afffb8;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.cta-button {
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background-color: $primary-blue;
+  color: #fff;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+}
+
+/** Common Styling */
+.branding-bcg {
+  width: 100vw;
+  height: 50vh;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  background: transparent
+    linear-gradient(248deg, var(--unnamed-color-303f60) 0%, #1a253c 100%) 0% 0%
+    no-repeat padding-box;
+  background: transparent linear-gradient(248deg, #303f60 0%, #1a253c 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.activity-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 30rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0px 30px 36px #557da526;
+}
+
+.action-btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}

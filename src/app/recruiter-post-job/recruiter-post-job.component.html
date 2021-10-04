@@ -1,0 +1,59 @@
+<div class="branding-bcg">
+  <header>
+    <h4>My<span class="text-primary-blue">Jobs</span></h4>
+  </header>
+  <hr />
+</div>
+
+<div class="activity-card">
+  <h4>Post a Job</h4>
+  <form [class.was-validated]="incorrectCredentials" novalidate>
+    <div class="form-group mt-4">
+      <label for="job-title">Job Title</label>
+      <input
+        type="email"
+        class="form-control"
+        id="job-title"
+        placeholder="Enter job title"
+        required
+        [(ngModel)]="title"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="job-title">Description</label>
+      <textarea
+        class="form-control"
+        rows="3"
+        [(ngModel)]="description"
+        [ngModelOptions]="{ standalone: true }"
+      >
+      </textarea>
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="exampleInputPassword1">Location</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Location"
+        aria-label="location"
+        required
+        [(ngModel)]="location"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <div class="invalid-feedback text-right">All fields are mandatory</div>
+    </div>
+
+    <div class="text-center mt-4">
+      <button
+        type="submit"
+        class="action-btn btn btn-primary mt-2 pl-3 pr-3"
+        (click)="postJob()"
+      >
+        Post
+      </button>
+    </div>
+  </form>
+</div>

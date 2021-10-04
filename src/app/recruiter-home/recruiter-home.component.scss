@@ -1,0 +1,58 @@
+.recruiter-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.branding-bcg {
+  height: 30vh;
+}
+
+.job-postings {
+  position: absolute;
+  top: 5rem;
+  left: 4rem;
+  padding: 2rem 4rem;
+  color: rgb(47, 47, 47);
+  width: 100%;
+}
+
+.job-card-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.btn-transparent {
+  font-size: 13px;
+}
+
+.job-card-description {
+  font-size: 13px;
+}
+
+.circle {
+  width: 38px;
+  border-radius: 2.5rem;
+  background: #d9efff;
+  color: rgb(36, 36, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 1.5rem;
+}
+
+.header-right {
+  display: flex;
+}
+
+.jobs-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-card {
+  width: 25%;
+  margin: 1rem 2rem;
+}

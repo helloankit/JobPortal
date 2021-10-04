@@ -1,0 +1,108 @@
+<div class="branding-bcg">
+  <header>
+    <h4>My<span class="text-primary-blue">Jobs</span></h4>
+  </header>
+  <hr />
+</div>
+
+<div class="activity-card">
+  <h4>Signup</h4>
+  <form [class.was-validated]="incorrectCredentials" novalidate>
+    <div class="signup-category">
+      <label>I'm a</label>
+      <div class="row mt-2">
+        <div class="col-3">
+          <button class="btn btn-primary">Recruiter</button>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-light" disabled>Candidate</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="exampleInputEmail1">Full Name</label>
+      <input
+        type="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+        [ngModelOptions]="{ standalone: true }"
+        [(ngModel)]="name"
+      />
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+        required
+        [ngModelOptions]="{ standalone: true }"
+        [(ngModel)]="email"
+      />
+    </div>
+
+    <div class="form-group mt-4 row">
+      <div class="col">
+        <label for="exampleInputPassword1">Create Password</label>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          required
+          [ngModelOptions]="{ standalone: true }"
+          [(ngModel)]="password"
+        />
+      </div>
+
+      <div class="col">
+        <label for="exampleInputPassword1">Confirm Password</label>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          required
+          [ngModelOptions]="{ standalone: true }"
+          [(ngModel)]="confirmPassword"
+        />
+      </div>
+
+      <div class="form-group mt-4">
+        <label for="exampleInputPassword1">Skills</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter comma separated skills"
+          required
+          [ngModelOptions]="{ standalone: true }"
+          [(ngModel)]="skills"
+        />
+      </div>
+
+      <!-- <div class="invalid-feedback text-right">
+        Incorrect email address or password.
+      </div> -->
+    </div>
+
+    <div class="text-center mt-4">
+      <button
+        type="submit"
+        class="action-btn btn btn-primary mt-2 pl-3 pr-3"
+        (click)="signup()"
+      >
+        Signup
+      </button>
+      <br />
+      <br />
+      <p class="font-14">
+        Have an account?
+        <span class="text-primary-blue cursor-pointer" routerLink="/login"
+          >Login</span
+        >
+      </p>
+    </div>
+  </form>
+</div>

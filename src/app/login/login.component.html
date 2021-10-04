@@ -1,0 +1,66 @@
+<div class="branding-bcg">
+  <header>
+    <h4>My<span class="text-primary-blue">Jobs</span></h4>
+  </header>
+  <hr />
+</div>
+
+<div class="activity-card">
+  <h4>Login</h4>
+  <form [class.was-validated]="incorrectCredentials" novalidate>
+    <div class="form-group mt-4">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+        required
+        [(ngModel)]="email"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+
+    <div class="form-group mt-4">
+      <div style="display: flex; justify-content: space-between">
+        <label for="exampleInputPassword1">Password</label>
+        <small
+          class="form-text text-primary-blue cursor-pointer"
+          routerLink="/forgot-password"
+          >Forgot Password</small
+        >
+      </div>
+
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Password"
+        [(ngModel)]="password"
+        [ngModelOptions]="{ standalone: true }"
+        required
+      />
+      <div class="invalid-feedback text-right">
+        Incorrect email address or password.
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <button
+        (click)="login()"
+        class="action-btn btn btn-primary mt-2 pl-3 pr-3"
+      >
+        Login
+      </button>
+      <br />
+      <br />
+      <p class="font-14">
+        New to MyJobs?
+        <span class="text-primary-blue cursor-pointer" routerLink="/register"
+          >Create an account</span
+        >
+      </p>
+    </div>
+  </form>
+</div>

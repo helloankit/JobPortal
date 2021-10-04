@@ -1,0 +1,37 @@
+<div class="branding-bcg">
+  <header class="recruiter-header">
+    <h4>My<span class="text-primary-blue">Jobs</span></h4>
+    <div class="header-right">
+      <button class="btn btn-transparent text-white" routerLink="/post-job">
+        Post a Job
+      </button>
+      <div class="circle">{{ nameInitials }}</div>
+    </div>
+  </header>
+
+  <hr />
+</div>
+
+<div class="job-postings">
+  <p class="text-white">Job posted by you</p>
+  <div class="col-12">
+    <div class="jobs-container">
+      <ng-container *ngFor="let job of jobsData">
+        <div class="job-card">
+          <div class="card p-4">
+            <h5>{{ job.title }}</h5>
+            <p class="job-card-description">
+              {{ job.description }}
+            </p>
+            <div class="job-card-group">
+              <span>{{ job.location }}</span>
+              <button class="btn btn-sm btn-transparent text-black">
+                View Applicants
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

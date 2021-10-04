@@ -1,0 +1,58 @@
+.landing-hero {
+  width: 100vw;
+  height: 65vh;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  background: transparent
+    linear-gradient(248deg, var(--unnamed-color-303f60) 0%, #1a253c 100%) 0% 0%
+    no-repeat padding-box;
+  background: transparent linear-gradient(248deg, #303f60 0%, #1a253c 100%) 0%
+    0% no-repeat padding-box;
+}
+
+#landing-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.landing-hero-content {
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-image {
+  text-align: right;
+  img {
+    width: 80%;
+    border-radius: 14px;
+  }
+}
+
+/** Why Us Section */
+
+#why-us {
+  margin-top: 6rem;
+  padding: 3rem 11rem;
+}
+
+.card-content {
+  padding: 1rem;
+  span {
+    font-size: 18px;
+  }
+}
+
+.card-description {
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+/** Partners Section */
+
+#partners {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  padding: 0rem 11rem;
+}
